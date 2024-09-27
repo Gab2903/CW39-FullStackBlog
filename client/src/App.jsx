@@ -5,8 +5,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-createBrowserRouter;
-
 function App() {
   return <></>;
 }
