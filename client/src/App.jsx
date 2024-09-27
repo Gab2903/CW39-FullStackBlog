@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import PostDetailsPage from "./pages/PostDetailsPage";
 import CreatePostPage from "./pages/CreatePostPage";
 
+
 const App = () => (
   <Router>
     <Routes>
@@ -12,5 +13,6 @@ const App = () => (
     </Routes>
   </Router>
 );
+
 
 export default App;
