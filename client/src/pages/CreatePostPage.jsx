@@ -28,7 +28,7 @@ const CreatePostPage = () => {
       .then((response) => {
         if (response.ok) {
           alert("Movie added successfully!");
-          navigate("/"); // Redirect to the homepage or movie list
+          navigate("/");
         } else {
           alert("Error adding movie.");
         }
