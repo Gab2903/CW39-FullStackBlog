@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <div className="p-4">
       <Link to="/create-post">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mb-4">
+        <button className="bg-gray-800 hover:bg-blue-700 text-[#d5c3aa] px-4 py-2 rounded-lg mb-4">
           Add New Movie
         </button>
       </Link>

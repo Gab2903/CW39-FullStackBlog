@@ -14,8 +14,21 @@ const PostDetailsPage = () => {
   }, [id]);
 
   const handleDelete = () => {
-    // Hier zum Delete Funktionalität (Sami)
-    alert("Noch nicht implementiert");
+    fetch(`http://localhost:8000/movies/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Movie deleted successfully");
+          navigate("/");
+        } else {
+          alert("Failed to delete the movie");
+        }
+      })
+      .catch((error) => {
+        console.error("Error deleting movie:", error);
+        alert("An error occurred while trying to delete the movie");
+      });
   };
 
   const handleUpdate = () => {
