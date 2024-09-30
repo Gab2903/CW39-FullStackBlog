@@ -91,13 +91,13 @@ const PostDetailsPage = () => {
   }
 
   return (
-    <div className="p-8 bg-gray-900 text-[#d5c3aa] rounded-lg shadow-lg">
+    <div className="w-full h-full my-8 p-8 bg-gray-900 text-[#d5c3aa] rounded-lg shadow-lg">
       <h1 className="text-3xl font-semibold mb-4">{movie.title}</h1>
       {movie.cover && (
         <img
           src={movie.cover}
           alt={movie.title}
-          className="w-full h-64 object-cover rounded-lg mb-4"
+          className="max-w-full h-96 object-cover rounded-lg mb-4"
         />
       )}
       <p className="text-lg mb-2">Year: {movie.year}</p>
@@ -107,13 +107,13 @@ const PostDetailsPage = () => {
       <div className="mt-4 flex space-x-4">
         <button
           onClick={handleDelete}
-          className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg"
+          className="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-lg"
         >
           Delete
         </button>
         <button
           onClick={handleUpdate}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg"
+          className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-lg"
         >
           Update
         </button>

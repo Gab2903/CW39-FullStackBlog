@@ -38,7 +38,7 @@ const CreatePostPage = () => {
 
   return (
     <div className="p-8 bg-gray-900 text-[#d5c3aa] rounded-lg shadow-lg max-w-lg mx-auto">
-      <h1 className="text-3xl font-semibold mb-6">Add a New Movie</h1>
+      <h1 className="text-3xl font-semibold mb-6">Add a new Movie</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-2 text-lg">Title</label>
@@ -97,7 +97,7 @@ const CreatePostPage = () => {
         </div>
         <button
           type="submit"
-          className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg w-full"
+          className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-lg w-full"
         >
           Add Movie
         </button>
